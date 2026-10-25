@@ -1,2 +1,66 @@
 # black-archive.
-My First Project Name ' The Black Archive" where You Need To solve Mysteries with the help of clues 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Black Archive</title>
+  <style>
+    body {
+      background: #0b0b0d;
+      color: #e8e3d8;
+      font-family: Georgia, serif;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .case {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 30px;
+      border: 1px solid #55504a;
+      background: #141416;
+    }
+
+    h1 { letter-spacing: 5px; }
+    p { line-height: 1.8; color: #b8b2a8; }
+
+    button {
+      padding: 12px 20px;
+      background: #e8e3d8;
+      color: #111;
+      border: none;
+      cursor: pointer;
+    }
+
+    #clue { display: none; }
+  </style>
+</head>
+<body>
+  <p>ARCHIVE ACCESS // FILE 001</p>
+  <h1>THE BLACK ARCHIVE</h1>
+  <p>Some secrets were never meant to be found.</p>
+
+  <div class="case">
+    <h2>CASE 001: THE EMPTY ROOM</h2>
+    <p>
+      At 03:17 AM, a recording appeared from a room
+      that had been locked for twenty years.
+    </p>
+
+    <button onclick="revealClue()">OPEN EVIDENCE</button>
+
+    <p id="clue">
+      CLUE FOUND: The recording contains a clock
+      ticking backwards.
+    </p>
+  </div>
+
+  <script>
+    function revealClue() {
+      document.getElementById("clue").style.display = "block";
+    }
+  </script>
+</body>
+</html>
